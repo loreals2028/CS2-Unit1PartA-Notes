@@ -25,10 +25,40 @@ JavaScript is more popular
 */
 
 
+/*
+
+Notes 9/22
+
+Object-oriented programming: programming built on classes and objects
+ex.
+public class MyClass{
+~~~~~~~~~~~~~~~~~(numofStudent)
+~~~~~~~~~~~~~(Subject)
+}
+Class: blueprint of an object (no memory)
+Object: actual implementation(gets stored in memory)
+
+method: reusable chunk of code that accomplishes an action (function)
+ex. main method (entry point to our code)
+-> main(){
+}
+we code in an IDE with a compiler
+compilers translate our java to binary
+
+/*.... */ /*bulk comment */
+
+//......// line comment
+
+//every action in java ends with a //;//
+
+*/
 
 public class Main {
 
    public static void main(String []args) {
-      System.out.println("Hello World");
+      System.out.println("It makes no sense to divide a number by zero!");
+      System.out.println(3/0); //undefined cannot divided by 0 in Java//
+
+
    }
 }
