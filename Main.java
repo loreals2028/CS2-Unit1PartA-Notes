@@ -36,9 +36,9 @@ public class MyClass{
 ~~~~~~~~~~~~~(Subject)
 }
 Class: blueprint of an object (no memory)
-Object: actual implementation(gets stored in memory)
+Object: actual implementation(gets stored in memory) objects are built from classes
 
-method: reusable chunk of code that accomplishes an action (function)
+method: reusable chunk of code that accomplishes an action (function) blueprint/plan
 ex. main method (entry point to our code)
 -> main(){
 }
@@ -52,6 +52,33 @@ compilers translate our java to binary
 //every action in java ends with a //;//
 
 */
+
+/* 
+Notes 9/23
+
+Primitibe Type - strong simple information/data (ex. int x = 5; )
+Object(Refrence) Type - storing complex data/objects (ex. creature cat = new creature)
+
+Primitive Variable Types to Know:
+1. int - stores integers/positive or negative whole numbers
+2. double - stores decimal numbers (ex. double x = 5.0;) (ex. double y = 4.25;)
+3. boolean - stores logic only two options are "true" or "false"
+
+Object Variable Type to Know:
+1. String -  stores text (ex. "5.0" it's in quotes so it is read as text "Hello World")
+
+Setting Up Variables In Code:
+Declaring + Assigning go together
+1. Declare Variable --> int x; , String name;
+2. Assign Variable  --> x = 5 , name = "L'Oreal"
+
+Or do it in one step! Combines 1. + 2.
+3. Initialize Variable  -->  int x = 5; , String name = "L'Oreal"
+
+
+*/
+
+
 
 public class Main {
 
