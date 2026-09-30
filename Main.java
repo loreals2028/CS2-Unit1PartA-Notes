@@ -1,3 +1,8 @@
+import java.util.Scanner;
+
+//Import Statement above ^ 9/30
+                     //  |   
+
 /*
 Comment Space
 Notes 9/18:
@@ -129,14 +134,53 @@ public class Main {
       //arithmetic operations (+ - * /)
       //working with only ints, output will be an int
       // int/int does TRUNCATING DIVISION removes the decimal, does not round if you are dividing by two numbers that give you a decimal
-      System.out.println(12/10);
+      //System.out.println(12/10);
       //if we want to divide and get a decimal, we need to divided with a double
-      System.out.println(19/10.5);
-      System.out.println(10 + 12.0);
-      // % givves us the remainder
-      System.out.println(12%10);
+      //System.out.println(19/10.5);
+      //System.out.println(10 + 12.0);
+      // % gives us the remainder
+      //System.out.println(12%10);
+
+      //Notes 9/30
+      
+      int myNum = 7;
+      int newNum = myNum;
+      newNum = 8;
+
+      System.out.println(myNum);
+      System.out.println(newNum);
+
+      //incrementing variable 
+      myNum = myNum + 1;
+      myNum = myNum + 1;
+
+//This does the same thing
+//This handles the assignment and the addition all at once
+               
+      myNum++;
+
+      //decrementing
+      myNum = myNum - 1;
+      myNum--;
+
+      System.out.println(myNum);
+      //System.out.println(newNum);
 
 
+
+int x = 0;
+int y = 1;
+int z = 2;
+x = y;
+y = y * 2;
+z = 3;
+System.out.println(x);
+System.out.println(y);
+System.out.println(z);
+
+//working with Scanner class and text input
+      System.out.println("Greetings human! What is your name?");
+      Scanner scan = new Scanner(System.in);
 
 
    }
