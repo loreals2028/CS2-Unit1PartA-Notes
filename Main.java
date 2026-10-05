@@ -180,8 +180,63 @@ System.out.println(z);
 
 //working with Scanner class and text input
       System.out.println("Greetings human! What is your name?");
-      Scanner scan = new Scanner(System.in);
+      // Scanner scan = new Scanner(System.in);
 
+
+      /*
+
+Notes Oct 5th 2026:
+
+Lesson 1.5 - Casting
+Casting allows us to change from one data type to another
+
+We cast using a "cast operator" written in () before our expression/data type
+      
+      */
+
+      double doubleNum = 5.0;
+      System.out.println((int)doubleNum/2); // you can't divide a string by an int you have to change the data type(turn into double) you have to cast it
+
+// cast from a double to an int, it will truncate our double
+// casting from an int to a double will just add ".0" to the end
+
+//example:
+
+      System.out.println((int) 4.3);
+      System.out.println((double) 8);
+
+      double number; // positive value from somewhere
+      double negNumber; // negative value from somewhere
+
+      number = 4.9;
+      negNumber = -3.6;
+
+      int nearestInt = (int)(number + 0.5);
+      int nearestNegInt= (int)(negNumber - 0.5);
+
+      System.out.println(nearestInt);
+      System.out.println(nearestNegInt);
+
+
+      // 1) declare and initialize grades
+int grade1 = 65;
+int grade2 = 97;
+int grade3 = 86;
+
+// 2) declare sum
+ int sum;
+
+// 3) declare average as double
+ double average;
+
+// 4) compute sum
+int sum = grade1 + grade2 + grade3;
+
+// 5) compute average with casting
+ average = ((double) sum )/ 3;
+
+// 6) print result
+ System.out.println(average);
 
    }
 }
