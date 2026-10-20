@@ -219,24 +219,93 @@ We cast using a "cast operator" written in () before our expression/data type
 
 
       // 1) declare and initialize grades
-int grade1 = 65;
-int grade2 = 97;
-int grade3 = 86;
+      int grade1 = 65;
+      int grade2 = 97;
+      int grade3 = 86;
 
-// 2) declare sum
- int sum;
+      // 2) declare sum
+      int sum;
 
-// 3) declare average as double
- double average;
+      // 3) declare average as double
+      double average;
 
-// 4) compute sum
-int sum = grade1 + grade2 + grade3;
+      // 4) compute sum
+      int sum = grade1 + grade2 + grade3;
 
-// 5) compute average with casting
- average = ((double) sum )/ 3;
+      // 5) compute average with casting
+      average = ((double) sum )/ 3;
 
-// 6) print result
- System.out.println(average);
+      // 6) print result
+      System.out.println(average);
+
+      // Notes 10/6/2026
+
+      //Lesson 1.6 Compound Assignment Operators
+
+      //Conpound assignment operators always have the mth symbol first, and then the equal sign
+
+      average = average + 1;
+      average+= 1; // These two lines do the exact same thing 
+      average ++; // Most condensed version only increments one or decrements by 1.
+      System.out.println(average);
+
+      // we can do compound operators with any number, not just 1.
+
+      average -= 2;
+      average --; //Most condensed version only increments one or decrements by 1.
+      System.out.println(average);
+
+      // Task
+
+      int score = 0;
+      System.out.println(score); // 0
+
+      score++;                   // +1
+      System.out.println(score); // 1
+
+      score *= 2;                // ×2
+      System.out.println(score); // 2
+
+      int penalty = 5;
+      score -= penalty / 2;      // 2 - (5/2) -> 2 - 2 -> 0 (integer division)
+      System.out.println(score); // 0
+
+
+      // 1) Add 3 to score using a compound operator
+      // score ...
+
+      score = score + 3;
+
+
+      // 2) Divide score by 2 using a compound operator
+      // score ...
+
+// Notes October 9th, 2026
+
+/* 
+Precondition*:
+before the method runs
+      what must be true  
+      
+Postcondition*:
+after the method runs
+  what must be true  
+
+*/
+
+/*
+Notes Oct/20/2026
+
+Method: A named block of code that performs a task/process when it is called.
+ex. our main method ---> public static void main(String []args){~~~~~~~}
+These blocks of code that are named is any section enclosed in { }. These named blocks of code go by many names in different programming languages: functions, procedures, subroutines, etc. In Java they are called methods, as in a method of doing something.
+
+Procedural Abstraction
+Allowing a programmer to use a method without knowing exactly how it works, i.e. "abstracting away" the details.
+
+*/
+
+ 
 
    }
 }
