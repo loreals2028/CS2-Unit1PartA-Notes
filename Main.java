@@ -305,6 +305,37 @@ Allowing a programmer to use a method without knowing exactly how it works, i.e.
 
 */
 
+
+/*
+
+Notes 10/22
+Methods:
+ex. methodname(){
+ execute a task
+} 
+ 
+Method Signature/Header
+When using methods in a library or API, we can look up the method signature/header) in its documentation.
+
+A method header is the first line of a method that defines:
+
+Method name
+Return type (e.g., void means no return value)
+Parameter list (variables and data types in parentheses; may be empty, but parentheses are required)
+
+Parameters vs. Arguments
+We can make methods even more powerful and more abstract by giving them parameters for data that they need to do their job. This allows values, or arguments, to be passed and used by a method.
+
+A parameter (“formal parameter”) is a placeholder variable declared in the method header.
+An argument (“actual parameter”) is the value passed into the method when called.
+The argument must be compatible with the parameter’s data type.
+Example:
+
+Signature: println(String x) → parameter is String x
+Call: println("Hello World"); → argument is "Hello World"
+
+*/
+
  
 
    }
