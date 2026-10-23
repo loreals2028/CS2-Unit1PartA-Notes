@@ -82,7 +82,7 @@ Or do it in one step! Combines 1. + 2.
 
 */
 
-
+/* 
 public class Main {
 
    public static void main(String []args) {
@@ -92,9 +92,10 @@ public class Main {
       int num;
       num = 4;
       System.out.println(num);
+*/
 
 // Notes 9/28
-
+/* 
       //declare a variable
       double myGradeAverage;
       //asign a value
@@ -140,10 +141,11 @@ public class Main {
       //System.out.println(10 + 12.0);
       // % gives us the remainder
       //System.out.println(12%10);
+*/
 
       //Notes 9/30
       
-      int myNum = 7;
+     /*  int myNum = 7;
       int newNum = myNum;
       newNum = 8;
 
@@ -156,7 +158,7 @@ public class Main {
 
 //This does the same thing
 //This handles the assignment and the addition all at once
-               
+/*         
       myNum++;
 
       //decrementing
@@ -165,9 +167,9 @@ public class Main {
 
       System.out.println(myNum);
       //System.out.println(newNum);
+*/
 
-
-
+/* 
 int x = 0;
 int y = 1;
 int z = 2;
@@ -177,9 +179,10 @@ z = 3;
 System.out.println(x);
 System.out.println(y);
 System.out.println(z);
+*/
 
 //working with Scanner class and text input
-      System.out.println("Greetings human! What is your name?");
+      //System.out.println("Greetings human! What is your name?");
       // Scanner scan = new Scanner(System.in);
 
 
@@ -194,56 +197,56 @@ We cast using a "cast operator" written in () before our expression/data type
       
       */
 
-      double doubleNum = 5.0;
-      System.out.println((int)doubleNum/2); // you can't divide a string by an int you have to change the data type(turn into double) you have to cast it
+      //double doubleNum = 5.0;
+      //System.out.println((int)doubleNum/2); // you can't divide a string by an int you have to change the data type(turn into double) you have to cast it
 
 // cast from a double to an int, it will truncate our double
 // casting from an int to a double will just add ".0" to the end
 
 //example:
 
-      System.out.println((int) 4.3);
-      System.out.println((double) 8);
+      //System.out.println((int) 4.3);
+      //System.out.println((double) 8);
 
-      double number; // positive value from somewhere
-      double negNumber; // negative value from somewhere
+      //double number; // positive value from somewhere
+      //double negNumber; // negative value from somewhere
 
-      number = 4.9;
-      negNumber = -3.6;
+      //number = 4.9;
+      //negNumber = -3.6;
 
-      int nearestInt = (int)(number + 0.5);
-      int nearestNegInt= (int)(negNumber - 0.5);
+      //int nearestInt = (int)(number + 0.5);
+      //int nearestNegInt= (int)(negNumber - 0.5);
 
-      System.out.println(nearestInt);
-      System.out.println(nearestNegInt);
+      //System.out.println(nearestInt);
+     // System.out.println(nearestNegInt);
 
 
       // 1) declare and initialize grades
-      int grade1 = 65;
-      int grade2 = 97;
-      int grade3 = 86;
+     // int grade1 = 65;
+      //int grade2 = 97;
+      //int grade3 = 86;
 
       // 2) declare sum
-      int sum;
+      //int sum;
 
       // 3) declare average as double
-      double average;
+      //double average;
 
       // 4) compute sum
-      int sum = grade1 + grade2 + grade3;
+      //int sum = grade1 + grade2 + grade3;
 
       // 5) compute average with casting
-      average = ((double) sum )/ 3;
+     // average = ((double) sum )/ 3;
 
       // 6) print result
-      System.out.println(average);
+      //System.out.println(average);
 
       // Notes 10/6/2026
 
       //Lesson 1.6 Compound Assignment Operators
 
       //Conpound assignment operators always have the mth symbol first, and then the equal sign
-
+/* 
       average = average + 1;
       average+= 1; // These two lines do the exact same thing 
       average ++; // Most condensed version only increments one or decrements by 1.
@@ -275,7 +278,9 @@ We cast using a "cast operator" written in () before our expression/data type
       // score ...
 
       score = score + 3;
-
+ }
+}
+  */
 
       // 2) Divide score by 2 using a compound operator
       // score ...
@@ -345,8 +350,17 @@ Ex. A school wide event or rule, like a fire drill procedure, has one set of ins
 An instance(non static) method is like a student's personal schedule.
 
 Class methods are associated with the class (not instances of the class which we will see in later lessons).
+Instance: need an object to work
+car{
+      getGas()
+      updateMiles()
+      }
+car myVan = newCar();
+myVan.getGas();
 
 The main method is always static, there can only be one copy per Java class.
+Static Methods: don't change can be used without making an object
+Math.abs(num)
 
 Class methods include the keyword static in the header before the method name.
 
@@ -385,13 +399,43 @@ Calling Methods from Another Class
 When calling a method defined in the same class, use the method name.
 When calling a method from a different class, include the class name.
 Static (class) methods are typically called using the class name and the dot operator (.).
-
-
-
+When calling a static method
+className.method()
 
 */
 
- 
 
-   }
+//Notes 10/23 1.11 Math Class
+
+public class Main{
+      public static void main(String []args){
+            //practicing using static nethods from the Math class
+            /* ABSOLUTE VALUE
+            int Math.abs(int x) */
+            //another option
+           // double math.abs(double x)
+           //example of overloaded method has more than one definition
+
+           int z = Math.abs(-45);
+           System.out.println(z);
+
+           int casted_z = (int) Math.abs(-46.7);
+           System.out.print(casted_z);
+
+           /*POWER METHOD
+           Math.pow(double x, double n) */
+
+           double base = 3;
+           double exponent = 4;
+           //steps = number(base) raised by a power(exponent)
+           double solution = Math.pow(base,exponent);
+           System.outprintln(solution);
+
+           int int_base= 3;
+           int int_exponent = 4;
+           double solution = Math.pow(int_base, int_exponent);
+           System.out.println(other_solution);
+           //TAKEAWAY: You can give it any number and it will print a double no matter what Even if you give it an int
+
+      }
 }
