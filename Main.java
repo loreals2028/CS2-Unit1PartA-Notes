@@ -336,6 +336,61 @@ Call: println("Hello World"); → argument is "Hello World"
 
 */
 
+/*
+Notes 1.10 HW  Static Methods
+
+Calling Static (Class) Methods
+Most methods we've used so far are static methods, also called class methods. They are associated with the general class, meaning there is only one copy of the method.
+Ex. A school wide event or rule, like a fire drill procedure, has one set of instructions that applies to everyone.
+An instance(non static) method is like a student's personal schedule.
+
+Class methods are associated with the class (not instances of the class which we will see in later lessons).
+
+The main method is always static, there can only be one copy per Java class.
+
+Class methods include the keyword static in the header before the method name.
+
+Template for static method definition
+// static method header
+public static returnType methodName(parameters) {
+    // method body
+}
+
+(Non) Void Methods
+Void methods: Use the keyword void as the return type and do not return a value. They perform an action
+Ex. Turn on the light
+
+Non void methods: Return a value (output) based on the given arguments.
+Ex. What's the temperature outside?
+
+The return statement in a non void method:
+Sends a value back(output)
+Must return a data type that matches the method's return type in the method header.
+Ends method execution immediately.
+
+When calling a non void method, you must do something with the return value:
+      
+store the output in a variable, or use it in an expression directly
+
+int y = calcArea(3,5); // store return value
+System.out.println(y); 
+System.out.println(calcArea(4,2)); // use directly
+
+Common Errors with Non Void Methods
+Forgetting to use the return value: Assign it to a variable or use it in an expression.
+Mismatched types: The variable's type must match the method's return type.
+Incorrect argument types/order: Match the method signature exactly.
+
+Calling Methods from Another Class
+When calling a method defined in the same class, use the method name.
+When calling a method from a different class, include the class name.
+Static (class) methods are typically called using the class name and the dot operator (.).
+
+
+
+
+*/
+
  
 
    }
