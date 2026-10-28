@@ -429,13 +429,36 @@ public class Main{
            double exponent = 4;
            //steps = number(base) raised by a power(exponent)
            double solution = Math.pow(base,exponent);
-           System.outprintln(solution);
+           System.out.println(solution);
 
            int int_base= 3;
            int int_exponent = 4;
-           double solution = Math.pow(int_base, int_exponent);
+           double other_solution = Math.pow(int_base, int_exponent);
            System.out.println(other_solution);
            //TAKEAWAY: You can give it any number and it will print a double no matter what Even if you give it an int
+
+      // Notes 10/28
+
+      //RANDOM METHOD: double Math.random() this gives us a random number between 0.0 and 1.0 NOT INCLUSIVE
+
+      double rand = Math.random();
+      System.out.println(rand);
+
+      /*  (int)(Math.random()*range) + min
+            moves the random number into a range starting from a minimum number
+            
+            The range of possible values is:
+            (max - min + 1). */
+
+      // select a random integer between 1 and 20 
+      int other_rand = (int)(Math.random()* 20) + 1;
+      System.out.println(other_rand);
+
+      //donut class tests
+      Donut firstDonut = new Donut();
+      System.out.println(firstDonut.flavor);
+
+
 
       }
 }
