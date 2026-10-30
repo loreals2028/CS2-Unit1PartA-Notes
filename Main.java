@@ -458,6 +458,48 @@ public class Main{
       Donut firstDonut = new Donut();
       System.out.println(firstDonut.flavor);
 
+/* 
+Notes 1.14 Oct. 29, 2026
+
+Calling Instance (Object) Methods
+
+Methods are actions an object can perform. A turtle object named yertle can move or turn using methods called yertle.forward() and yertle.turnRight() to change its position. These methods are called instance methods or object methods because they are called using an instance or object of the class. in this case a specific Turtle object like yertle.
+
+Instance methods define the behavior and actions that an object can perform.
+
+Instance methods are called on objects of the class.
+
+The dot operator is used along with the object name to call instance methods, for example object.method();
+
+A method call on a null reference will result in a NullPointerException.
+
+Some methods take arguments that are placed inside the parentheses object.method(arguments).
+
+Traditionally, Class names are capitalized, and object variables are lowercase.
+
+A method signature is the method name followed by the parameter list which gives the type and name for each parameter. Note that methods do not have to take any parameters, but you still need the parentheses after the method name.
+
+The method call arguments must match the method signature in number, order, and type.
+
+A method call interrupts the sequential execution of statements, causing the program to first execute the statements in the method or constructor before continuing. Once the last statement in the method or constructor has executed or a return statement is executed, the flow of control is returned to the point immediately following the method or constructor call.
+
+Method Calls with Arguments
+Methods like forward() and turnRight() always do the same thing unless you give them arguments. Arguments allow you to specify details like how far to move or how much to turn.
+
+Example:
+
+forward(200); // move 200 pixels
+turn(30);     // turn 30 degrees
+
+When you define your own method, the variables in its definition are called parameters. When you call the method, the values you pass in are arguments.
+
+Non-void methods are methods that return values. You should do something with the return value, such as assigning it to a variable, using it in an expression, or printing it.
+
+int width = yertle.getWidth();
+System.out.println(yertle.getXPos());
+
+*/
+
 
 
       }
